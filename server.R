@@ -26,8 +26,10 @@ function(input, output, session) {
       
       
       
-      rv$pol_oc <- pol_oc |>
-        filter(scientificName %in% input$side | vernacularName %in% input$side) 
+      rv$pol_oc <- if(is.null(input$side)) {
+        tibble(eventDate = Date(),  scientificName = character(), vernacularName = character())} else {
+        pol_oc |>
+        filter(scientificName %in% input$side | vernacularName %in% input$side) }
       
       if(nrow(rv$pol_oc)==0) {
         createAlert(

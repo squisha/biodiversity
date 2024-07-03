@@ -32,6 +32,7 @@ function(input, output, session) {
         pol_oc |>
         filter(scientificName %in% input$side | vernacularName %in% input$side) }
       
+      req(rv$pol_oc)
       if(nrow(rv$pol_oc)==0) {
         createAlert(
           id = "noselect",

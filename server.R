@@ -58,7 +58,7 @@ function(input, output, session) {
         summarize(day_cnt = n()) |>
         pivot_wider(names_from = year, values_from = day_cnt)
       
-      tabeServer("BioTabe", rv$pol_oc_L, rv$theme)
+      #tabeServer("BioTabe", rv$pol_oc_L, rv$theme)
     }
   )
   

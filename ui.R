@@ -55,8 +55,8 @@ shinyUI(dashboardPage(
       elevation = 2,
       height = '100%',
       tabPanel(
-        title = "Data",
-        tabeUI("BioTabe")
+        title = "Data"
+        #tabeUI("BioTabe")
                     
       )
     ),

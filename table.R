@@ -2,6 +2,8 @@ library(reactable)
 library(reactablefmtr)
 library(tidyr)
 library(lubridate)
+library(shinycssloaders)
+
 
 tabeServer <- function(id, data, theme) {
   moduleServer(

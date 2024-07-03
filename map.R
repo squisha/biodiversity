@@ -1,4 +1,5 @@
 library(leaflet)
+library(shinycssloaders)
 
 mapServer <- function(id, data) {
   moduleServer(
@@ -17,5 +18,5 @@ mapServer <- function(id, data) {
 
 mapUI <- function(id) {
   ns <- NS(id)
-  leafletOutput(ns("map"))
+  leafletOutput(ns("map")) %>% withSpinner()
 }

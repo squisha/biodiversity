@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet');
+
+/* color pallet 
+#1D657E || dark blue 
+#8EB2BE || light blue
+#51899C || med blue
+#FA8C00 || orange
+#141416 || black
+#5f5f68 || grey
+*/
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+
+.main-footer {
+  font-size: 9px;
+  background-color: #eaeef3;
+}
+
+a {
+  color: #1D657E;
+}
+
+.nav-link.active {
+  color : #1D657E;
+}
+
+/* alert box */ 
+.alert.alert-dismissible.alert-primary {
+background: #1D657E;
+border-color: #8EB2BE;
+}
+
+
+
+

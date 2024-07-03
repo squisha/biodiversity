@@ -1,7 +1,6 @@
 
 library(shinyjs)
 library(dplyr)
-library(shinycssloaders)
 library(shinyauthr)
 library(shinyWidgets)
 library(bs4Dash)
@@ -16,7 +15,7 @@ options(digits=10)
 source("map.R", local=T)
 source("sidebar.R", local=T)
 source("table.R", local=T)
-
+source("footer.R", local=T)$value
 
 shinyUI(dashboardPage(
   fullscreen = TRUE,
@@ -25,13 +24,14 @@ shinyUI(dashboardPage(
   header = dashboardHeader(
     skin='dark',
     title =  dashboardBrand(
-      title = "Marketing",
+      title = "Bio Diversity",
       color = "white",
-      image = "https://play-lh.googleusercontent.com/oGungDhFuHgenpkPMAlYomWe4hC5JNKZlYPYKueuuBir9QyrmYXZYnIffjb_DDiUuQQ"
+      image = "bio-logo.png"
     )),
   sidebar = dashboardSidebar(uiOutput("reactive_sidebar")),
   controlbar = NULL,
   body = dashboardBody(
+    tags$link(rel = "stylesheet", type = "text/css", href = "styles.css"),
     use_theme(create_theme(bs4dash_layout(sidebar_width = "425px"))),
     useShinyjs(),
     tags$script(

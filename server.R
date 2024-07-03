@@ -1,3 +1,4 @@
+library(shinycssloaders)
 
 source("map.R", local=T)
 source("sidebar.R", local=T)
@@ -19,7 +20,6 @@ function(input, output, session) {
       input$side,
       input$'dark_mode'),
     {
-      
       rv$theme = if(input$'dark_mode'==T) {
         midnightblue()
       } else { nytimes() }
@@ -55,7 +55,6 @@ function(input, output, session) {
         pivot_wider(names_from = year, values_from = day_cnt)
       
       tabeServer("BioTabe", rv$pol_oc_L, rv$theme)
-      
     }
   )
   

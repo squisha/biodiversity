@@ -41,6 +41,6 @@ tabeServer <- function(id, data, theme) {
 
 tabeUI <- function(id) {
   ns <- NS(id)
-  reactableOutput(ns("tabe"))
+  reactableOutput(ns("tabe")) %>% withSpinner()
 }
 

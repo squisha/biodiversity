@@ -37,7 +37,7 @@ sideUI <- function(id, data) {
           .bs-deselect-all {width: 100% !important;}")),
   pickerInput(
     inputId = id,
-    label = "Search Bar",
+    label = "Search",
     choices = list(
       `Scientific Name` = sci_choices,
       `Vernacular Name` = vern_choices
@@ -54,4 +54,4 @@ sideUI <- function(id, data) {
     )
     )
   )
-  }
+}

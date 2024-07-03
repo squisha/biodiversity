@@ -23,10 +23,12 @@ tabeServer <- function(id, data, theme) {
             style = color_scales(data, text_size = 24, span = TRUE)
           ),
           columns = list(
-            scientificName = colDef(
+            scientific_vernacular_names = colDef(
+              name = "Scientific / Vernacular Name",
               minWidth = 100,
               maxWidth = 175,
-              align = 'left'
+              align = 'left',
+              html = TRUE
             )
           )
         ) %>% 

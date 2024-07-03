@@ -34,18 +34,6 @@ shinyUI(dashboardPage(
     tags$link(rel = "stylesheet", type = "text/css", href = "styles.css"),
     use_theme(create_theme(bs4dash_layout(sidebar_width = "425px"))),
     useShinyjs(),
-    tags$script(
-      "
-        $(document).ready(function() {
-            var el = $('#text');
-            el.on('shiny:recalculated', function(e){
-                setTimeout(function() {
-                     el.scrollTop(el.prop('scrollHeight'));
-                }, 400)
-            });
-        });
-        "
-    ),
     fluidRow(tabBox(
       width = 12,
       solidHeader = FALSE,

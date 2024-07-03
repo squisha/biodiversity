@@ -27,7 +27,8 @@ function(input, output, session) {
       
       
       rv$pol_oc <- if(is.null(input$side)) {
-        tibble(eventDate = Date(),  scientificName = character(), vernacularName = character())} else {
+        tibble(eventDate = Date(),  scientificName = character(), vernacularName = character(),
+               longitudeDecimal = numeric(), latitudeDecimal = numeric())} else {
         pol_oc |>
         filter(scientificName %in% input$side | vernacularName %in% input$side) }
       

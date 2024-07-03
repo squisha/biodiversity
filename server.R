@@ -25,7 +25,7 @@ function(input, output, session) {
       } else { nytimes() }
       
       
-      
+      req(input$side)
       rv$pol_oc <- if(is.null(input$side)) {
         tibble(eventDate = Date(),  scientificName = character(), vernacularName = character(),
                longitudeDecimal = numeric(), latitudeDecimal = numeric())} else {

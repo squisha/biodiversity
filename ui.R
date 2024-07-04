@@ -28,7 +28,8 @@ shinyUI(dashboardPage(
       color = "white",
       image = "bio-logo.png"
     )),
-  sidebar = dashboardSidebar(uiOutput("reactive_sidebar")),
+  sidebar = dashboardSidebar(), 
+  #dashboardSidebar(uiOutput("reactive_sidebar")),
   controlbar = NULL,
   body = dashboardBody(
     tags$link(rel = "stylesheet", type = "text/css", href = "styles.css"),

@@ -17,7 +17,7 @@ function(input, output, session) {
   
   observeEvent(
     list(
-      input$side,
+      #input$side,
       input$'dark_mode'),
     {
       rv$theme = if(input$'dark_mode'==T) {
@@ -65,11 +65,11 @@ function(input, output, session) {
 
 
   
-  output$reactive_sidebar <- renderUI({
+  #output$reactive_sidebar <- renderUI({
     
-    sideUI("side", data = pol_oc |> select(scientificName, vernacularName) ) 
+    #sideUI("side", data = pol_oc |> select(scientificName, vernacularName) ) 
     
-    })
+   # })
         
 
 }

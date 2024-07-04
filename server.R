@@ -1,10 +1,10 @@
-library(shinycssloaders)
+#library(shinycssloaders)
 
 #source("map.R", local=T)
 #source("sidebar.R", local=T)
 #source("table.R", local=T)
 
-pol_oc <- read.csv("./pol_oc.csv")
+#pol_oc <- read.csv("./pol_oc.csv")
 
 function(input, output, session) {
   

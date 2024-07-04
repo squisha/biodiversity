@@ -9,8 +9,8 @@ library(fresh)
 
 
 
-options(spinner.color="#0275D8", spinner.color.background="#ffffff", spinner.size=2)
-options(digits=10)
+#options(spinner.color="#0275D8", spinner.color.background="#ffffff", spinner.size=2)
+#options(digits=10)
 
 #source("map.R", local=T)
 #source("sidebar.R", local=T)
@@ -26,7 +26,7 @@ shinyUI(dashboardPage(
     title =  dashboardBrand(
       title = "Bio Diversity",
       color = "white",
-      image = "bio-logo.png"
+      #image = "bio-logo.png"
     )),
   sidebar = dashboardSidebar(), 
   #dashboardSidebar(uiOutput("reactive_sidebar")),
@@ -34,7 +34,7 @@ shinyUI(dashboardPage(
   body = dashboardBody(
     #tags$link(rel = "stylesheet", type = "text/css", href = "styles.css"),
     #use_theme(create_theme(bs4dash_layout(sidebar_width = "425px"))),
-    useShinyjs(),
+    #useShinyjs(),
     fluidRow(tabBox(
       width = 12,
       solidHeader = FALSE,

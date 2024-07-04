@@ -40,7 +40,6 @@ sideUI <- function(id, data) {
   pickerInput(
     inputId = id,
     label = "Search",
-    selected = sci_choices[1],
     choices = list(
       `Scientific Name` = sci_choices,
       `Vernacular Name` = vern_choices

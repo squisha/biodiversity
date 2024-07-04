@@ -13,7 +13,7 @@ options(digits=10)
 
 source("map.R", local=T)
 source("sidebar.R", local=T)
-#source("table.R", local=T)
+source("table.R", local=T)
 #source("footer.R", local=T)$value
 
 shinyUI(dashboardPage(
@@ -57,8 +57,8 @@ shinyUI(dashboardPage(
       elevation = 2,
       height = '100%',
       tabPanel(
-        title = "Data"
-        #tabeUI("BioTabe")
+        title = "Data",
+        tabeUI("BioTabe")
                     
       )
     ),

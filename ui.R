@@ -12,7 +12,7 @@ library(fresh)
 #options(digits=10)
 
 #source("map.R", local=T)
-#source("sidebar.R", local=T)
+source("sidebar.R", local=T)
 #source("table.R", local=T)
 #source("footer.R", local=T)$value
 
@@ -28,8 +28,7 @@ shinyUI(dashboardPage(
       image = "bio-logo.png"
     )
   ),
-  sidebar = dashboardSidebar(), 
-  #dashboardSidebar(uiOutput("reactive_sidebar")),
+  sidebar = dashboardSidebar(uiOutput("reactive_sidebar")),
   controlbar = NULL,
   body = dashboardBody(
     tags$link(rel = "stylesheet", type = "text/css", href = "styles.css"),

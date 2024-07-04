@@ -1,28 +1,28 @@
 #library(shinycssloaders)
 
 #source("map.R", local=T)
-#source("sidebar.R", local=T)
+source("sidebar.R", local=T)
 #source("table.R", local=T)
 
-#pol_oc <- read.csv("./pol_oc.csv")
+pol_oc <- read.csv("./pol_oc.csv")
 
 function(input, output, session) {
   
-  #rv <- reactiveValues(
-   # pol_oc = NULL,
-    #pol_oc_L = NULL,
-    #theme = NULL
-  #)
+  rv <- reactiveValues(
+    pol_oc = NULL,
+    pol_oc_L = NULL,
+    theme = NULL
+  )
   
   
   observeEvent(
     list(
-      #input$side,
+      input$side,
       input$'dark_mode'),
     {
-      #rv$theme = if(input$'dark_mode'==T) {
-       # midnightblue()
-      #} else { nytimes() }
+      rv$theme = if(input$'dark_mode'==T) {
+        midnightblue()
+      } else { nytimes() }
       
       
       #req(input$side)
@@ -65,11 +65,11 @@ function(input, output, session) {
 
 
   
-  #output$reactive_sidebar <- renderUI({
+  output$reactive_sidebar <- renderUI({
     
-    #sideUI("side", data = pol_oc |> select(scientificName, vernacularName) ) 
+    sideUI("side", data = pol_oc |> select(scientificName, vernacularName) ) 
     
-   # })
+    })
         
 
 }

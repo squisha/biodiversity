@@ -32,8 +32,8 @@ shinyUI(dashboardPage(
   #dashboardSidebar(uiOutput("reactive_sidebar")),
   controlbar = NULL,
   body = dashboardBody(
-    #tags$link(rel = "stylesheet", type = "text/css", href = "styles.css"),
-    #use_theme(create_theme(bs4dash_layout(sidebar_width = "425px"))),
+    tags$link(rel = "stylesheet", type = "text/css", href = "styles.css"),
+    use_theme(create_theme(bs4dash_layout(sidebar_width = "425px"))),
     #useShinyjs(),
     #fluidRow(tabBox(
      # width = 12,

@@ -8,11 +8,11 @@
 
 function(input, output, session) {
   
-  rv <- reactiveValues(
-    pol_oc = NULL,
-    pol_oc_L = NULL,
-    theme = NULL
-  )
+  #rv <- reactiveValues(
+   # pol_oc = NULL,
+    #pol_oc_L = NULL,
+    #theme = NULL
+  #)
   
   
   observeEvent(

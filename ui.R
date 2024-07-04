@@ -43,8 +43,8 @@ shinyUI(dashboardPage(
       elevation = 2,
       height = '50%',
       tabPanel(
-       title = "Map"
-        #mapUI("BioMap")
+       title = "Map",
+        mapUI("BioMap")
         )
     )
   ),

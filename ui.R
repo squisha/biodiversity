@@ -17,16 +17,17 @@ library(fresh)
 #source("footer.R", local=T)$value
 
 shinyUI(dashboardPage(
-  fullscreen = TRUE,
-  help = NULL,
-  title = "Bio Diversity",
+  #fullscreen = TRUE,
+  #help = NULL,
+  #title = "Bio Diversity",
   header = dashboardHeader(
-    skin='dark',
-    title =  dashboardBrand(
-      title = "Bio Diversity",
-      color = "white",
+    #skin='dark',
+    #title =  dashboardBrand(
+      #title = "Bio Diversity",
+      #color = "white",
       #image = "bio-logo.png"
-    )),
+    #)
+  ),
   sidebar = dashboardSidebar(), 
   #dashboardSidebar(uiOutput("reactive_sidebar")),
   controlbar = NULL,
@@ -34,34 +35,35 @@ shinyUI(dashboardPage(
     #tags$link(rel = "stylesheet", type = "text/css", href = "styles.css"),
     #use_theme(create_theme(bs4dash_layout(sidebar_width = "425px"))),
     #useShinyjs(),
-    fluidRow(tabBox(
-      width = 12,
-      solidHeader = FALSE,
-      collapsible = TRUE,
-      maximizable=TRUE,
-      type="tabs",
-      elevation = 2,
-      height = '50%',
-      tabPanel(
-        title = "Map"
+    #fluidRow(tabBox(
+     # width = 12,
+      #solidHeader = FALSE,
+      #collapsible = TRUE,
+      #maximizable=TRUE,
+      #type="tabs",
+      #elevation = 2,
+      #height = '50%',
+      #tabPanel(
+       # title = "Map"
         #mapUI("BioMap")
-        )
-    )),
-    fluidRow(tabBox(
-      width = 12,
-      solidHeader = FALSE,
-      collapsible = TRUE,
-      maximizable=TRUE,
-      type="tabs",
-      elevation = 2,
-      height = '100%',
-      tabPanel(
-        title = "Data"
+        #)
+  #  )
+  #),
+    #fluidRow(tabBox(
+     # width = 12,
+      #solidHeader = FALSE,
+      #collapsible = TRUE,
+      #maximizable=TRUE,
+      #type="tabs",
+      #elevation = 2,
+      #height = '100%',
+      #tabPanel(
+        #title = "Data"
         #tabeUI("BioTabe")
                     
-      )
-    )#,
+     # )
+    #)#,
     #div(id = "noselect", style = "position: absolute; bottom: 0; right: 0;")
-    )
+    #)
   )
 ))

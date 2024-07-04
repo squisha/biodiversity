@@ -50,13 +50,13 @@ function(input, output, session) {
       
       #mapServer("BioMap", rv$pol_oc)
       
-      rv$pol_oc_L <- rv$pol_oc |> mutate(
-        year = year(ymd(eventDate)),
-        scientific_vernacular_names = paste0("<b>",scientificName,"</b><br>", vernacularName)) |> 
-        select(year, scientific_vernacular_names) |>
-        group_by(year, scientific_vernacular_names) %>%
-        summarize(day_cnt = n()) |>
-        pivot_wider(names_from = year, values_from = day_cnt)
+     # rv$pol_oc_L <- rv$pol_oc |> mutate(
+      #  year = year(ymd(eventDate)),
+       # scientific_vernacular_names = paste0("<b>",scientificName,"</b><br>", vernacularName)) |> 
+        #select(year, scientific_vernacular_names) |>
+        #group_by(year, scientific_vernacular_names) %>%
+        #summarize(day_cnt = n()) |>
+        #pivot_wider(names_from = year, values_from = day_cnt)
       
       #tabeServer("BioTabe", rv$pol_oc_L, rv$theme)
     }

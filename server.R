@@ -27,11 +27,11 @@ function(input, output, session) {
       
       
       #req(input$side)
-      #rv$pol_oc <- if(is.null(input$side)) {
-        #tibble(eventDate = Date(),  scientificName = character(), vernacularName = character(),
-        #       longitudeDecimal = numeric(), latitudeDecimal = numeric())} else {
-       # pol_oc |>
-      #  filter(scientificName %in% input$side | vernacularName %in% input$side) }
+      rv$pol_oc <- if(is.null(input$side)) {
+        tibble(eventDate = Date(),  scientificName = character(), vernacularName = character(),
+               longitudeDecimal = numeric(), latitudeDecimal = numeric())} else {
+        pol_oc %>%
+        filter(scientificName %in% input$side | vernacularName %in% input$side) }
       
      # req(rv$pol_oc)
       #if(nrow(rv$pol_oc)==0) {

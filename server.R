@@ -48,7 +48,7 @@ function(input, output, session) {
           closeAlert(id = "noselect")
         }
       
-      mapServer("BioMap", rv$pol_oc)
+      #mapServer("BioMap", rv$pol_oc)
       
       rv$pol_oc_L <- rv$pol_oc |> mutate(
         year = year(ymd(eventDate)),

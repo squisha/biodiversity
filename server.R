@@ -20,9 +20,9 @@ function(input, output, session) {
       #input$side,
       input$'dark_mode'),
     {
-      rv$theme = if(input$'dark_mode'==T) {
-        midnightblue()
-      } else { nytimes() }
+      #rv$theme = if(input$'dark_mode'==T) {
+       # midnightblue()
+      #} else { nytimes() }
       
       
       #req(input$side)

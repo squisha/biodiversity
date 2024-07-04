@@ -11,7 +11,7 @@ library(fresh)
 options(spinner.color="#0275D8", spinner.color.background="#ffffff", spinner.size=2)
 options(digits=10)
 
-#source("map.R", local=T)
+source("map.R", local=T)
 source("sidebar.R", local=T)
 #source("table.R", local=T)
 #source("footer.R", local=T)$value

@@ -1,7 +1,7 @@
 #library(shinycssloaders)
 library(dplyr)
 library(reactablefmtr)
-#source("map.R", local=T)
+source("map.R", local=T)
 source("sidebar.R", local=T)
 #source("table.R", local=T)
 

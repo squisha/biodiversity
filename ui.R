@@ -19,14 +19,14 @@ library(fresh)
 shinyUI(dashboardPage(
   fullscreen = TRUE,
   help = NULL,
-  #title = "Bio Diversity",
+  title = "Bio Diversity",
   header = dashboardHeader(
-    skin='dark',
-    title =  dashboardBrand(
-      title = "Bio Diversity",
-      color = "white",
-      image = "bio-logo.png"
-    )
+    #skin='dark',
+    #title =  dashboardBrand(
+      #title = "Bio Diversity",
+      #color = "white",
+      #image = "bio-logo.png"
+    #)
   ),
   sidebar = dashboardSidebar(), 
   #dashboardSidebar(uiOutput("reactive_sidebar")),

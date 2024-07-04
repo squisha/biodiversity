@@ -1,7 +1,6 @@
 
 library(shinyjs)
 library(dplyr)
-library(shinyauthr)
 library(shinyWidgets)
 library(bs4Dash)
 library(reactable)

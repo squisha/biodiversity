@@ -10,7 +10,7 @@ Currently, the sidebar module is rendered server side unnecessarily, which is le
 
 Modules from top left to bottom right, as shown visually in the app. 
 
-sidebar.R contains all the UI related features of the sidebar including the search bar. The server aspects are implemented at the bottom of server.R.
+sidebar.R contains all the UI related features of the sidebar including the search bar. The server aspects are implemented at the bottom of server.R. Both scientific and vernacular names are stacked within a single search bar.
 
 map.R and table.R contain all of the map and table related features (i.e. both UI and server), respectively. The data that flows into each is filtered by the search bar input, the logic of which exists in server.R, subsequently each module is called.
 

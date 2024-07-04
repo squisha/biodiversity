@@ -4,7 +4,7 @@ Shiny Application for gbif.org data.
 The (hopefully) working app can be viewed here https://vistalore.com/biodiversity/.
 
 The current iteration of the app loads a subset of the gbif.org data stored locally on the server. 
-given that the full dataset is large (almost 20GB), future versions will benefit from having an API integrated to call data bring data into memory only when it's needed which will improve initial app loading efficiency. 
+given that the full dataset is large (almost 20GB), future versions will benefit from having an API integrated to bring data into memory only when it's needed which will improve initial app loading efficiency. 
 
 Currently, the sidebar module is rendered server side unnecessarily, which is less efficient; this is in preparation for adding region and date range filters which will limit the animal names shown in the search bar accordingly. 
 

@@ -19,7 +19,7 @@ library(fresh)
 shinyUI(dashboardPage(
   fullscreen = TRUE,
   help = NULL,
-  title = "Bio Diversity",
+  #title = "Bio Diversity",
   header = dashboardHeader(
     skin='dark',
     title =  dashboardBrand(

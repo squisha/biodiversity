@@ -34,20 +34,20 @@ function(input, output, session) {
         filter(scientificName %in% input$side | vernacularName %in% input$side) }
       
      # req(rv$pol_oc)
-      #if(nrow(rv$pol_oc)==0) {
-        #createAlert(
-         # id = "noselect",
-          #options = list(
-           # title = "Alert",
-            #closable = TRUE,
-            #width = 12,
-            #elevations = 4,
-            #status = "primary",
-            #content = "No data available for that selection, or lack thereof. Use the left sidebar to search for something"
-          #)
-        #) } else {
-         # closeAlert(id = "noselect")
-        #}
+      if(nrow(rv$pol_oc)==0) {
+        createAlert(
+          id = "noselect",
+          options = list(
+            title = "Alert",
+            closable = TRUE,
+            width = 12,
+            elevations = 4,
+            status = "primary",
+            content = "No data available for that selection, or lack thereof. Use the left sidebar to search for something"
+          )
+        ) } else {
+          closeAlert(id = "noselect")
+        }
       
       #mapServer("BioMap", rv$pol_oc)
       

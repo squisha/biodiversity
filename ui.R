@@ -8,8 +8,8 @@ library(fresh)
 
 
 
-#options(spinner.color="#0275D8", spinner.color.background="#ffffff", spinner.size=2)
-#options(digits=10)
+options(spinner.color="#0275D8", spinner.color.background="#ffffff", spinner.size=2)
+options(digits=10)
 
 #source("map.R", local=T)
 source("sidebar.R", local=T)

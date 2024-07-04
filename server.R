@@ -53,7 +53,7 @@ function(input, output, session) {
       
       rv$pol_oc_L <- rv$pol_oc %>% mutate(
         year = year(ymd(eventDate)),
-        scientific_vernacular_names = paste0("<b>",scientificName,"</b><br>", vernacularName)) |> 
+        scientific_vernacular_names = paste0("<b>",scientificName,"</b><br>", vernacularName)) %>%
         select(year, scientific_vernacular_names) %>%
         group_by(year, scientific_vernacular_names) %>%
         summarize(day_cnt = n()) %>%

@@ -26,14 +26,12 @@ function(input, output, session) {
       } else { nytimes() }
       
       
-      #req(input$side)
       rv$pol_oc <- if(is.null(input$side)) {
         tibble(eventDate = character(),  scientificName = character(), vernacularName = character(),
                longitudeDecimal = numeric(), latitudeDecimal = numeric())} else {
         pol_oc %>%
         filter(scientificName %in% input$side | vernacularName %in% input$side) }
       
-     # req(rv$pol_oc)
       if(nrow(rv$pol_oc)==0) {
         createAlert(
           id = "noselect",

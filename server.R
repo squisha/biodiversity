@@ -1,5 +1,5 @@
 #library(shinycssloaders)
-
+library(dplyr)
 #source("map.R", local=T)
 source("sidebar.R", local=T)
 #source("table.R", local=T)
